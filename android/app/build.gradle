@@ -95,6 +95,8 @@ android {
     }
     buildTypes {
         debug {
+            debuggable true
+            buildConfigField "boolean", "DEBUG", "true"
             signingConfig signingConfigs.debug
         }
         release {
